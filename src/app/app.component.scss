@@ -1,0 +1,36 @@
+.header {
+  background: rgb(0, 0, 0, 0.8);
+}
+.header-text {
+  font-family: Calibri;
+  font-size: 1.3em;
+  color: primary;
+}
+.example-container {
+  width: 100vw;
+  height: calc(100vh - 64px);
+  background: none;
+  display: flex;
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+}
+
+.example-sidenav {
+  padding: 20px;
+  background: rgb(0, 0, 0, 0.3);
+}
+.nav-bar-lock {
+  margin: auto 0;
+  transition: 0.44s;
+  &.rotated {
+    transform: rotate(-450deg);
+  }
+}
+
+::ng-deep .mat-drawer-inner-container {
+  display: flex;
+  flex-direction: column;
+}
